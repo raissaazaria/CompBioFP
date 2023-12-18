@@ -1,49 +1,27 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Biological Pathway Explorer</title>
+    <title>Genetic Algorithm App</title>
 </head>
 <body>
-    <header>
-        <h1>Biological Pathway Explorer</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="main-content">
-        <form action="/explore_pathway" method="post">
-            <label for="pathway_id">Enter Pathway ID:</label>
-            <input type="text" id="pathway_id" name="pathway_id" required>
-            <button type="submit">Explore Pathway</button>
-        </form>
-    </section>
-    
-    <section id="about" class="main-content">
-        <div class="">
-            <h2>About Us</h2>
-            <p>
-                Welcome to Biological Pathway Explorer! We are a team of researchers and developers passionate
-                about exploring and understanding biological pathways. Our mission is to provide a user-friendly
-                platform for researchers and enthusiasts to explore and analyze biological pathways with ease.
-            </p>
-            <p>
-                Feel free to use our explorer tool to delve into the intricate details of various biological pathways.
-                If you have any questions or suggestions, don't hesitate to reach out to us.
-            </p>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Biological Pathway Explorer. All rights reserved.</p>
-    </footer>
+    <h1>Genetic Algorithm App</h1>
+    <form action="/run_genetic_algorithm" method="POST">
+        <label for="population_size">Population Size:</label>
+        <input type="text" id="population_size" name="population_size" required>
+
+        <label for="generations">Number of Generations:</label>
+        <input type="text" id="generations" name="generations" required>
+
+        <!-- Include the mutation_rate field -->
+        <label for="mutation_rate">Mutation Rate:</label>
+        <input type="text" id="mutation_rate" name="mutation_rate" required>
+
+        <button type="submit">Run Genetic Algorithm</button>
+    </form>
 </body>
 </html>
-
