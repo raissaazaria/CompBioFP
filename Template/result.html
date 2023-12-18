@@ -1,26 +1,41 @@
+<!-- result.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Pathway Information</title>
-
+    <!-- Add any necessary styles or scripts here -->
+    <title>Genetic Algorithm Results</title>
 </head>
-<body class="res-body">
-    <h1 class='h1-header'>Pathway Information</h1>
+<body>
+    <h1>Genetic Algorithm Results</h1>
+    <p>Best Individual: {{ best_individual }}</p>
 
-    {% for section, items in pathway_info_dict.items() %}
-        <div class="section-item">
-            <h2 class='h2-item'>{{ section }}</h2>
-            <ul class='ul-item'>
-                {% for item in items %}
-                    <li class='li-item'>{{ item }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endfor %}
+    <!-- Add a container for the visualization -->
+    <div id="visualization-container"></div>
 
+    <!-- Add JavaScript to generate the bar plot -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        // Parse the best individual string to an array of integers
+        var bestIndividual = "{{ best_individual }}".split("").map(Number);
+
+        // Create a bar plot
+        var data = [{
+            x: Array.from({ length: bestIndividual.length }, (_, i) => i),  // Index array
+            y: bestIndividual,
+            type: 'bar',
+            marker: {
+                color: bestIndividual.map(val => val === 1 ? 'red' : 'blue')  // Color based on gene value
+            }
+        }];
+
+        var layout = {
+            title: 'Genetic Algorithm - Best Individual',
+            xaxis: { title: 'Gene Index' },
+            yaxis: { title: 'Gene Value' }
+        };
+
+        Plotly.newPlot('visualization-container', data, layout);
+    </script>
 </body>
 </html>
