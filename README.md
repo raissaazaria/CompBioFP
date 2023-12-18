@@ -1,6 +1,6 @@
 # CompBioFP
 
-#Biological Pathway Explorer
+# Biological Pathway Explorer
 
 A Biological Pathway Explorer is an application or software system designed to assist researchers or users interested in understanding and exploring biological pathways. Biological pathways refer to a series of molecular steps that occur within a cell to execute a specific function or response. Examples include gene activity, protein synthesis, and molecular interactions within a cell.
 
