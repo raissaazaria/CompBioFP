@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Pathway Information</title>
+
 </head>
-<body>
-    <h1>Pathway Information</h1>
-    <pre>{{ pathway_info }}</pre>
+<body class="res-body">
+    <h1 class='h1-header'>Pathway Information</h1>
+
+    {% for section, items in pathway_info_dict.items() %}
+        <div class="section-item">
+            <h2 class='h2-item'>{{ section }}</h2>
+            <ul class='ul-item'>
+                {% for item in items %}
+                    <li class='li-item'>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+
 </body>
 </html>
