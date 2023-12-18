@@ -1,26 +1,23 @@
-# CompBioFP
+# Genetic Algorithm Population Genetics App
 
-# Biological Pathway Explorer
+## Overview
+This application serves as a platform for exploring population genetics in plants using genetic algorithms. It combines research and educational components to provide an interactive experience for students, researchers, and plant biology enthusiasts.
 
-A Biological Pathway Explorer is an application or software system designed to assist researchers or users interested in understanding and exploring biological pathways. Biological pathways refer to a series of molecular steps that occur within a cell to execute a specific function or response. Examples include gene activity, protein synthesis, and molecular interactions within a cell.
+## Features
 
-# input list 
-hsa05210: Colorectal cancer - Homo sapiens (Human)
+### Educational Component
+- **Interactive Tools:** Experiment with various genetic parameters to observe their impact on genetic diversity, gene flow, and adaptation in plant populations.
+- **Tutorials and Guides:** Learn key population genetics concepts with accompanying tutorials and educational content.
+- **Visual Representation:** Utilize visually appealing graphics, animations, and simulations to understand complex genetic concepts.
 
-hsa04110: Cell cycle - Homo sapiens (Human)
+### Research Component
+- **Data Input and Analysis:** Facilitate data input and analysis for plant geneticists and researchers.
+- **Analytical Tools:** Explore and visualize genetic structure, estimate genetic diversity, gene flow, and perform statistical tests.
+- **Collaboration:** Support collaborative research through dataset sharing, synchronization, and version control.
 
-mmu04114: Oocyte meiosis - Mus musculus (Mouse)
+## Methods and Algorithms
+- **Genetic Algorithms:** Employ genetic algorithms as a fundamental computational technique for optimization and search heuristic.
+- **Biopython:** Utilize Biopython as the primary library for computational biology, providing tools for sequence analysis, phylogenetics, and population genetics.
+- **Python Package Index (PyPI):** Leverage PyPI for additional specialized Python packages enhancing functionality.
 
-ko04060: Cytokine-cytokine receptor interaction - General pathway (no specific organism)
 
-map04020: Calcium signaling pathway - General pathway (no specific organism)
-
-hsa04540: Gap junction - Homo sapiens (Human)
-
-dre04260: Cardiac muscle contraction - Danio rerio (Zebrafish)
-
-ecb05205: Proteoglycans in cancer - Echinococcus multilocularis (Fox tapeworm)
-
-ath01110: Biosynthesis of secondary metabolites - Arabidopsis thaliana (Mouse-ear cress)
-
-osa00010: Glycolysis / Gluconeogenesis - Oryza sativa (Rice)
