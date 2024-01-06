@@ -31,11 +31,9 @@ def plot(
     plt.plot(crispr, lw=2, label="CRISPR Females")
     plt.plot(sterile, lw=2, label="Sterile Males")
     plt.plot(crispr_resistance, lw=2, label="CRISPR Resistance Females")  
-    # Uncomment the line below if you want to include total population in the plot
-    # plt.plot(total_pop, lw=2, label="Total population")
 
-    plt.xlabel("Cycles")  # type: ignore
-    plt.ylabel("Population")  # type: ignore
+    plt.xlabel("Cycles")  
+    plt.ylabel("Population")  
     plt.title("Population with CRISPR and CRISPR Resistance")
     plt.legend()
     plt.tight_layout(pad=2.5)
