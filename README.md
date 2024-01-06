@@ -31,9 +31,33 @@ The CRISPR system, utilizing Cas-9 and guide RNA, is employed to edit DNA sequen
 Metrics, including population metrics, genetic diversity, and quantitative measures, are employed to evaluate the simulation's outcomes.
 
 ## How to Run the Simulation
+First, we need to download all the files. You can type git clone https://github.com/raissaazaria/CompBioFP on your terminal.
 
-1. Clone the repository.
-2. 
+
+After the file is downloaded, make sure to import necessary stuff before running the code.
+
+
+
+
+
+
+
+
+
+Go to the config.py file and set the number as needed.
+
+
+
+
+
+This is the sample of the result with the input number from the config.py file. If the user wants to change the graph, the user can close the previous displayed graph, and go to config.py to change the number. After the number being changed, the user can try to re-run the code from the run.py file and see the new displayed graph.
+
+
+
+This is the sample of the result with the input number from the config.py file. If the user wants to change the graph, the user can close the previous displayed graph, and go to config.py to change the number. After the number being changed, the user can try to re-run the code from the run.py file and see the new displayed graph.
+
+
+ 
 ## Results
 
 The simulation results indicate interactions between CRISPR individuals, resistance development, and population dynamics. Note: Currently, there may be inaccuracies in the results due to ongoing code refinement.
